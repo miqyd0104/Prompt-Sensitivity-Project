@@ -5,7 +5,7 @@ type: software
 authors:
   - family-names: Hamdani
     given-names: Syed Miqdad
-repository-code: "https://github.com/miqyd0104/Prompt-Sensitiivty-Project"
+repository-code: "https://github.com/miqyd0104/Prompt-Sensitivity-Project"
 license: MIT
 version: 1.0.0
 date-released: 2026-07-17

@@ -21,7 +21,7 @@ The highest mean automated claim-verification risk proxy occurred for Formal/Pro
 1. State the complete-block sample size separately for each model.
 2. Report the Friedman chi-square, degrees of freedom, exact p-value and Kendall's W.
 3. Report only Holm-significant paired comparisons, including direction and rank-biserial effect size.
-4. Compare the full-observed and uncapped-only conclusions.
+4. Compare the conclusions from the full-sample and uncapped-only analyses.
 
 ## RQ2 reporting order
 Report semantic divergence, claim-verification risk and recommendation instability separately. Do not treat the proxy measures as ground truth. Give recommendation extraction coverage and incorporate the manually validated hallucination rate when coding is complete.
@@ -30,7 +30,7 @@ Report semantic divergence, claim-verification risk and recommendation instabili
 Use the 100 base intents as paired blocks for model-level group sensitivity. Explicitly discuss differential censoring: ChatGPT reached the ceiling much more frequently than Claude, while Gemini did not reach it in this collection.
 
 ## Robustness interpretation
-The matched uncapped cross-model subset contains 320 prompt IDs (960 rows). If rankings or significance change across full, uncapped and no-length analyses, present the finding as collection-condition dependent.
+The matched cross-model subset of uncapped responses contains 320 prompt IDs (960 rows). If rankings or significance change across full-sample, uncapped-only and no-length analyses, present the finding as dependent on collection conditions.
 
 ## Distinction-level checklist
 - Link every table and figure to a research question rather than listing outputs.

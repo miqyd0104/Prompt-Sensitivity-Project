@@ -53,7 +53,7 @@ Each stage is implemented as a numbered Colab notebook and passes a versioned ar
 - Prompt phrasing produced statistically significant behavioural differences for every model. For the core sensitivity score, effect sizes were substantial: Kendall's W = 0.497 for ChatGPT, 0.736 for Claude, and 0.676 for Gemini.
 - Formal/Professional phrasing had the highest descriptive mean core sensitivity (0.636) and latent-semantic divergence (0.201) across the observed dataset.
 - Model-level within-intent sensitivity differed significantly, χ²(2) = 90.98, p < .001, Kendall's W = 0.455.
-- Collection conditions matter: ChatGPT reached the 1,200-token ceiling far more often than the other models. The repository therefore reports full-observed, uncapped-only, matched-prompt, and alternative-weight analyses.
+- Collection conditions matter: ChatGPT reached the 1,200-token ceiling far more often than the other models. The repository therefore reports full-sample, uncapped-only, matched-prompt, and alternative-weight analyses.
 
 Automated claim-risk and recommendation measures are explicitly treated as **proxies**, not verified hallucination or factuality labels. See the [methodology](docs/METHODOLOGY.md) and [validation protocol](results/manual_validation/manual_validation_protocol.md).
 
@@ -64,7 +64,7 @@ Automated claim-risk and recommendation measures are explicitly treated as **pro
 ├── assets/readme/          # README hero artwork
 ├── data/
 │   ├── raw/                # Collected provider responses
-│   ├── collection/            # Prompt design workbook
+│   ├── collection/         # Prompt design workbook
 │   └── processed/          # Analysis-ready dataset
 ├── notebooks/              # 01 collection → 02 cleaning → 03 analysis
 ├── results/
@@ -77,6 +77,7 @@ Automated claim-risk and recommendation measures are explicitly treated as **pro
 ```
 
 ## Reproduce the analysis
+
 The statistical analysis is fully local and does not require API keys.
 
 ```bash
@@ -121,7 +122,7 @@ Browse the complete [results index](results/README.md) or the generated [results
 
 ## Responsible interpretation
 
-This is an observational comparison under a fixed collection protocol and one response per prompt-model pair. Results should not be generalised to every model version, temperature, task, or deployment. Differential token censoring is a material limitation, and automated proxy measures require careful interpretation.
+This is an observational comparison conducted under a fixed collection protocol, with one response per prompt–model pair. Results should not be generalised to every model version, temperature, task, or deployment. Differential token censoring is a material limitation, and automated proxy measures require careful interpretation.
 
 ## Citation
 

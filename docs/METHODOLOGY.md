@@ -15,7 +15,7 @@ The study uses 100 base intents distributed across Technology, Finance, Healthca
 9. Constraint-Based
 10. Role-Based/Expert Framing
 
-This yields 1,000 unique prompts. Each prompt was submitted once to ChatGPT, Claude, and Gemini under provider-default temperature settings and a fixed 1,200-output-token ceiling.
+This yields 1,000 unique prompts. Each prompt was submitted once to ChatGPT, Claude, and Gemini using each provider's default temperature setting and a fixed output ceiling of 1,200 tokens.
 
 ## Data quality and realised sample
 
@@ -26,7 +26,7 @@ The expected design contains 3,000 prompt-model observations. The realised datas
 - **Latent-semantic divergence:** cosine distance from the within-model, within-intent centroid using TF-IDF word/bigram features reduced with Truncated SVD.
 - **Lexical instability:** mean pairwise Jaccard distance between content-word sets within a model-intent block.
 - **Length deviation:** absolute deviation from the within-block median word count, divided by that median.
-- **Structural deviation:** mismatch from the modal response-structure signature within a block.
+- **Structural deviation:** mismatch with the modal response-structure signature within a block.
 - **Recommendation-instability proxy:** mean Jaccard distance between heuristically extracted list-item labels, reported only where extraction coverage is adequate.
 - **Claim-verification risk proxy:** a transparent rule-based score for unsourced numeric or entity-dense claims. It is not a factuality judgement.
 - **Core behavioural sensitivity:** a scaled composite of semantic (0.45), lexical (0.25), length (0.15), and structural (0.15) components.
